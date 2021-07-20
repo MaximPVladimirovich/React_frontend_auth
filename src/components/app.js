@@ -14,7 +14,7 @@ const App = function () {
 
   const checkLoginStatus = function () {
     axios
-      .get("http://localhost:3001/logged_in", { withCredentials: true })
+      .get("https://beanstalk-api.herokuapp.com/logged_in", { withCredentials: true })
       .then(response => {
         if (response.data.logged_in && roaster.loggedInStatus === "NOT_LOGGED_IN") {
           setRoaster({

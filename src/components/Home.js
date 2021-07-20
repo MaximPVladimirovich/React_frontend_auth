@@ -11,7 +11,7 @@ const Home = function (props) {
   }
 
   function handleLogoutClick() {
-    axios.delete("http://localhost:3001/logout", { withCredentials: true }).then(response => {
+    axios.delete("https://beanstalk-api.herokuapp.com/logout", { withCredentials: true }).then(response => {
       props.handleLogout()
     }).catch(error => {
       console.log("logout error", error)

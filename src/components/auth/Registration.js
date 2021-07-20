@@ -14,7 +14,7 @@ const Registration = function (props) {
 
   const handleSubmit = function (event) {
 
-    axios.post("http://localhost:3001/registrations", {
+    axios.post("https://beanstalk-api.herokuapp.com/registrations", {
 
       roaster: {
         email: form.email || undefined,
